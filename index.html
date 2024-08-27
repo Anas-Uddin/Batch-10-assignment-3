@@ -4,6 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assignment 3</title>
+    <!-- manrope font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .manrope {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
     <!-- fontawesome script tag  -->
     <script
       src="https://kit.fontawesome.com/7c1089e77a.js"
@@ -19,9 +31,11 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="p-3">
-    <header>
-      <nav class="flex justify-between">
+  <body class="manrope">
+    <header class="p-3">
+      <nav
+        class="flex justify-between lg:text-2xl lg:font-semibold lg:justify-between"
+      >
         <div class="flex">
           <i
             class="fa-solid fa-arrow-right bg-[#ABEF5F] rounded-full p-3 -rotate-45"
@@ -51,8 +65,163 @@
           <i class="fa-solid fa-bars rounded-full p-3 bg-gray-100"></i>
         </div>
       </nav>
+      <section class="flex flex-col justify-center items-center">
+        <!-- banner section  -->
+        <img src="assets/banner.png" alt="" />
+        <h1 class="text-3xl font-bold lg:text-5xl m-4 lg:w-3/5 text-center">
+          A barn house of this design has a striking appearance
+        </h1>
+        <p class="text-lg font-medium lg:text-xl m-3 lg:w-4/5 text-center">
+          The barn house captivates with its blend of rustic charm and modern
+          sophistication, featuring weathered wood, sleek metal accents, and
+          large windows that flood the space with natural light.
+        </p>
+        <button class="bg-[#dffcb9] rounded-full flex p-2 items-center">
+          <h3 class="px-2">View Details</h3>
+          <i
+            class="fa-solid fa-arrow-right bg-[#ABEF5F] rounded-full p-3 -rotate-45"
+          ></i>
+        </button>
+      </section>
     </header>
-    <main></main>
+    <main>
+      <div class="lg:flex bg-[#F4F4F4]">
+        <section class="flex flex-col items-start justify-center p-3">
+          <!-- about section  -->
+          <img
+            class="hidden lg:flex lg:w-40 lg:m-5 lg:ml-10"
+            src="assets/Vector.png"
+            alt=""
+          />
+          <button
+            class="flex w-28 justify-center items-center bg-white rounded-full p-1 m-1 lg:ml-5"
+          >
+            <i class="fa-solid fa-arrow-right p-1"></i>
+            <h4 class="p-1">About us</h4>
+          </button>
+          <h1 class="text-3xl lg:text-5xl pl-7 font-bold lg:w-4/5 m-3">
+            We design thoughtful, liveable spaces
+          </h1>
+          <p class="pl-7 text-lg lg:text-xl font-medium lg:w-4/5 m-3">
+            The houses that we make are definitely a better living space for
+            anyone than any other company is going to provide you for sure.
+          </p>
+          <div
+            class="card card-side bg-base-100 shadow-xl p-1 pl-3 m-5 rounded-3xl lg:w-4/5"
+          >
+            <figure>
+              <img src="assets/commercial.png" alt="" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Commercial</h2>
+              <p>
+                We make the best Commercial buildings. Ones that makes your jaw
+                drop.
+              </p>
+            </div>
+          </div>
+          <div
+            class="card card-side bg-base-100 shadow-xl p-1 pl-3 m-5 rounded-3xl lg:w-4/5"
+          >
+            <figure>
+              <img src="assets/commercial.png" alt="" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Residential</h2>
+              <p>
+                Residential houses that you wanna live in forever, we got that
+                for you.
+              </p>
+            </div>
+          </div>
+        </section>
+        <div class="p-5 flex items-center lg:w-3/5">
+          <img src="assets/Rectangle.png" alt="" />
+        </div>
+      </div>
+      <section class="bg-[#F4F4F4] pt-5 lg:pt-16">
+        <div class="flex flex-col justify-center items-center">
+          <button
+            class="flex w-40 justify-center items-center bg-white rounded-full p-1 m-1 lg:ml-5"
+          >
+            <i class="fa-solid fa-arrow-right p-1"></i>
+            <h4 class="p-1">How we work</h4>
+          </button>
+          <h1
+            class="text-3xl font-extrabold lg:text-5xl m-4 lg:w-3/5 text-center"
+          >
+            Our Work Process
+          </h1>
+          <p
+            class="p-4 text-lg lg:text-xl font-medium text-center lg:w-4/5 m-3"
+          >
+            We put our heart out at what we do. we always plan carefully and
+            also be careful while executing our plan as well. We work hard to
+            make sure that you can have the best experience.
+          </p>
+        </div>
+        <div class="lg:flex lg:justify-center">
+          <div class="flex flex-col justify-center items-center lg:pr-2">
+            <div class="card bg-base-100 w-96 lg:w-60 shadow-xl bg-[#E7C1D3]">
+              <figure class="px-5 pt-5">
+                <img src="assets/concept.png" alt="" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title">Concept</h2>
+                <p>
+                  The idea of building a great house comes from great minds. We
+                  have the best minds to make sure you have a great and unique
+                  house.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col justify-center items-center lg:pr-2">
+            <div class="card bg-base-100 w-96 lg:w-60 shadow-xl bg-[#EFDA6E]">
+              <figure class="px-10 pt-10">
+                <img src="assets/concept.png" alt="" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title">Design Process</h2>
+                <p>
+                  We have the best designer available. They make sure that your
+                  house is the most unique one in the neighbourhood.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col justify-center items-center lg:pr-2">
+            <div class="card bg-base-100 w-96 lg:w-60 shadow-xl bg-[#A4DAC3]">
+              <figure class="px-10 pt-10">
+                <img src="assets/concept.png" alt="" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title">Supervision</h2>
+                <p>
+                  We carefully watch every steps of your house being built. We
+                  dont take things easy after we get the project.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col justify-center items-center lg:pr-2">
+            <div class="card bg-base-100 w-96 lg:w-60 shadow-xl bg-[#77AAEA]">
+              <figure class="px-10 pt-10">
+                <img src="assets/concept.png" alt="" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title">Budget Planning</h2>
+                <p>
+                  Budget is the most important thing while buying or making a
+                  house. We make sure that you get the best house in your
+                  budget.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
